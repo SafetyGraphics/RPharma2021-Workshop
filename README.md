@@ -4,11 +4,11 @@ Materials for the safetyGraphics R Phama 2021 Workshop
 # Outline
 
 1. Presentation - Intro To safetyGraphics (20 min)
-  - Team Overview & Philosophy
-  - Contributor guide with focus on GitHub workflow
-  - Overview of pacakges in safetyGraphics organization
-  - Introduce safetyGraphics Vignettes 
-  - safetyGraphics building blocks
+   - Team Overview & Philosophy
+   - Contributor guide with focus on GitHub workflow
+   - Overview of pacakges in safetyGraphics organization
+   - Introduce safetyGraphics Vignettes 
+   - safetyGraphics building blocks
      - data
      - charts
      - mapping
@@ -20,9 +20,9 @@ Materials for the safetyGraphics R Phama 2021 Workshop
    - Presentation Discuss `domainData` and `mapping` structure in more detail (5 min)
    - Examples (10 min)
    - Breakout - Excercise to load custom data (15 min) 
-4. Break (10 min)
-5. Chart/App Export (10 min) 
+4. Chart/App Export (10 min) 
    - Example and Excercise together (no breakout) 
+5. Break (10 min)
 6. Creating Custom Charts (1 hr)
    - Presentation - `chart` object details,  relevant helper functions  & safetyCharts tour (15 min. maybe longer?)
    - Tweaking safetyCharts import - Example 1 & Excercise 1 together (5 min)
@@ -35,7 +35,7 @@ Materials for the safetyGraphics R Phama 2021 Workshop
    - Presentation - discuss `meta` (10 min)
    - Example 1 - conmeds (10 min)
    - Breakout - ecg/QT (20 min)
-8. Chat/questions/discussion after workshop (zoom or use a different tool)
+8. Chat/questions/discussion after workshop (zoom or use a different tool?)
 
 
 ## NSE code stuff
