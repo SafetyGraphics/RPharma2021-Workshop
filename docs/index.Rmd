@@ -1,0 +1,96 @@
+---
+title: R/Pharma safetyGraphics Workshop
+author: ASA Biopharm-DIA Safety Working Group
+date: October 29, 2021
+output:
+  prettydoc::html_pretty:
+    theme: cayman
+---
+
+
+<div class="description-container">
+  <div class="description-left">
+  Materials for the <a href="https://safetygraphics.github.io/">safetyGraphics</a> R Pharma 2021 Workshop
+  
+  The Interactive Safety Graphics (ISG) subteam of the ASA Biopharm-DIA Safety Working Group is an interdisciplinary effort that, amongst other things, seeks to provide a clinical safety workflow for monitoring during clinical development in an open source model.
+  </div>
+  <img class="description-right" src="safetyGraphicsHex.png" alt="safetyGraphics hex sticker"/>
+</div>
+
+## Instructors
+
+| Instructor | Company |
+| --- | ------ |
+| [Spencer Childress](https://www.linkedin.com/in/spencer-childress-7a444b16/) | MMS |
+| [Renan Escalante](https://www.linkedin.com/in/renanescalante/) | Immuneering |
+| [Maya Gans](https://www.linkedin.com/in/mayagans/) | Atorus Research |
+| [Becca Krouse](https://www.linkedin.com/in/rebecca-krouse-b6ba8820/) | Rho |
+| [Eli Miller](https://www.linkedin.com/in/eli-miller-90532a87/) | Atorus Research |
+| [Xiao Ni](https://www.linkedin.com/in/xiao-ni-547141b/) | Sarepta Theraputics |
+| [Jeremy Wildfire](https://www.linkedin.com/in/jeremy-wildfire/) | Gilead Sciences |
+
+
+## Setup
+
+We'll be using [RStudio Cloud]() for this workshop
+
+## Schedule 
+
+
+| Time | Activity |
+| ---- | -------- |
+| 20 min | 🎬 Intro to safetyGraphics |
+| 10 min | 📓 Hello World |
+| 30 min | 📋 Loading Custom Data |
+| 10 min | 📈 Chart/App Export |
+| 10 min | ☕ Break |
+| 1 hr | 📊 Creating Custom Charts |
+| 40 min | ⌨️ Custom Domain |
+| 20 min | 🎀 Wrap Up | 
+
+
+
+## Helpful Links
+
+[Last Year's Workshop]()
+
+
+[Slides]()
+
+<style>
+  .description-container {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    width: 100%;
+    grid-gap: 20px;
+  }
+  
+  .description-left {
+    padding-top: 40px;
+  }
+  
+  .page-header {
+    text-align: center;
+    background-color: #EC5D57;
+    background-image: none;
+    padding: 1.5rem 2rem;
+  }
+  
+  .main-content h1,
+  .main-content h2,
+  .main-content h3,
+  .main-content h4 {
+    color: #EC5D57;
+  }
+  
+  .main-content table th {
+    font-weight: 700;
+    background-color: #EC5D57;
+   }
+   
+  .main-content h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    padding-top: 20px;
+  }
+</style>
