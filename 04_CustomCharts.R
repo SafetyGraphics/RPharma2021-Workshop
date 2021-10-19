@@ -12,9 +12,18 @@ charts <- makeChartConfig() #gets charts from safetyCharts pacakge by default
 notWidgets <- charts %>% purrr::keep(~.x$type != "htmlwidget")
 safetyGraphicsApp(charts=notWidgets)
 
+
+# Example 4.2 - Edit metadata for an existing a chart
+library(purrr)
+charts <- makeChartConfig() #gets charts from safetyCharts pacakge by default
+charts$aeTimelines$label <- "An AMAZING timeline"
+safetyGraphicsApp(charts=charts)
+
 # Try 04_Excercise1.R now!
 
-# Example 4.2 - Hello World
+
+
+# Example 4.3 - Add a custom Hello World chart
 helloWorld <- function(data, settings){
     plot(-1:1, -1:1)
     text(runif(20, -1,1),runif(20, -1,1),"Hello World")
@@ -34,7 +43,7 @@ helloworld_chart<-list(
 
 safetyGraphicsApp(charts=list(helloworld_chart))
 
-# Example 4.3 - Simple custom Chart using data and settings
+# Example 4.4 - Simple custom Chart using data and settings
 ageDist <- function(data, settings){
   p<-ggplot(
     data = data, 
@@ -59,7 +68,7 @@ charts <- makeChartConfig()
 charts$ageDist<-ageDist_chart
 safetyGraphicsApp(charts=charts)
 
-# Example 4.4 - Custom static outlier explorer
+# Example 4.5 - Custom static outlier explorer
 
 spaghettiPlot <- function( data, settings ){
 
@@ -103,7 +112,7 @@ charts <- makeChartConfig()
 charts$spaghetti<-prepareChart(read_yaml(text=spaghettiConfig))
 safetyGraphicsApp(charts=charts)
 
-# Example 4.5 - Custom shiny module
+# Example 4.6 - Custom shiny module
 
 safetyOutlierExplorer_ui <- function(id) {
     ns <- NS(id) 
