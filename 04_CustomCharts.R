@@ -62,13 +62,21 @@ safetyGraphicsApp(charts=charts)
 # Example 4.4 - Custom static outlier explorer
 
 spaghettiPlot <- function( data, settings ){
-    # define plot aes - note use of standard evaluation! 
-    plot_aes <- aes_(
-        x=as.name(settings$studyday_col), 
-        y=as.name(settings$value_col), 
-        group=as.name(settings$id_col)
+
+    plot_aes<-aes(
+      x=.data[[settings$studyday_col]],
+      x=.data[[settings$value_col]],
+      group=as.name(settings$id_col)
     )
 
+    # Can also be done using standard evaluation
+    # plot_aes <- aes_(
+    #    x=as.name(settings$studyday_col), 
+    #    y=as.name(settings$value_col), 
+    #    group=as.name(settings$id_col)
+    # )
+
+    
     #create the plot
     p<-ggplot(data = data, plot_aes) +
         geom_path(alpha=0.15) + 
