@@ -15,13 +15,11 @@ safetyGraphicsApp(charts=notWidgets)
 
 # Example 4.2 - Edit metadata for an existing a chart
 library(purrr)
-charts <- makeChartConfig() #gets charts from safetyCharts pacakge by default
+charts <- makeChartConfig()
 charts$aeTimelines$label <- "An AMAZING timeline"
 safetyGraphicsApp(charts=charts)
 
 # Try 04_Excercise1.R now!
-
-
 
 # Example 4.3 - Add a custom Hello World chart
 helloWorld <- function(data, settings){
