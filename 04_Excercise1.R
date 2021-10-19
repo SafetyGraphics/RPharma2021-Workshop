@@ -1,1 +1,0 @@
-# Initialize the app with all custom/experimental charts from safetyCharts included

@@ -1,8 +1,8 @@
-# Excercise 3.1 - Export the code for the hepatic explorer and run the chart as a standalone graphic. Use the same custom data loaded in `Ex2_1.R`
+# Exercise 3.1 - Export the code for the hepatic explorer and run the chart as a standalone graphic. Use the same custom data loaded in `Ex2_1.R`
 # Bonus - Update the exported code for the hepatic explorer settings to use a custom title. To learn more about custom settings, click "wiki" in the chart header "configuration" and look for settings.title (or just use this link - https://github.com/SafetyGraphics/hep-explorer/wiki/Configuration#settingstitle). 
 # Double Mega Bonus - Try other customizations. Simulate a treatment arm, and then use it as a grouping variable.
 
-########################## Bonus Excercise 3.1 Solution + Bonus ##########################
+########################## Bonus Exercise 3.1 Solution + Bonus ##########################
 # Paste directly from the "download code" button on the Charts/Hepatic Explorer page in the app you created in Ex2_1. Only needed update is to change the data on line 15. 
 # Additional customizastion for the bonus is done in the last line of the mapping_yaml definition on line 37 below. 
 
@@ -59,4 +59,4 @@ params <- widgetParams
 
 # Run the chart
 do.call(htmlwidgets::createWidget,params)
-########################## End Bonus Excercise 1a & 1b Solution ##################################
+########################## End Bonus Exercise 1a & 1b Solution ##################################

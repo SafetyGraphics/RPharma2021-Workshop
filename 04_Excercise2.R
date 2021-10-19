@@ -1,1 +1,0 @@
-# Update a chart with hard-coded data/columns to use the safetyGraphics data and settings objects. 
