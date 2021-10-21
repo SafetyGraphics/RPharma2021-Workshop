@@ -58,3 +58,12 @@ safetyGraphicsApp(
     domainData=list(hello=helloData), 
     charts=list(helloChart)
 )
+
+# Example 5.3 - Recreate the safetyOutlierExplorer Chart using ECG data
+adeg <- readr::read_csv("https://physionet.org/files/ecgcipa/1.0.0/adeg.csv?download")
+ecg_meta <- meta
+qtOutlierExplorerChart <- prepareChart('')
+
+# See this PR for a full implementation of the ECG domain in safetyCharts - 
+
+
