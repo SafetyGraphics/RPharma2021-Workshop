@@ -9,10 +9,9 @@ purrr::map(function(chart){
 safetyGraphicsApp(charts=allCharts)
 
 # Exercise 4.2 Solution - Convert the following static chart to run in the safetyGraphics app. Make sure that it works when custom data sets and mappings are provided.
-# Bonus - Normalize the data and plot the results using a standardized y-axis! 
+# Bonus - Normalize the data and plot the results using a standardized y-axis.
 library(safetyGraphics)
 library(tidyverse)
-
 labsBoxplot <- function(data,settings){
   p<-ggplot(
     data = data, 

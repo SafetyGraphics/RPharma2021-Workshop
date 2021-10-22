@@ -1,8 +1,11 @@
 # Exercise 4.2 - Convert the following static chart to run in the safetyGraphics app. Make sure that it works when custom data sets and mappings are provided.
 # Bonus - Normalize the data and plot the results using a standardized y-axis! 
 
-# Static Example
-library(ggplot2)
+############ Static Example #################
+library("safetyGraphics")
+library("tidyverse")
+library("ggplot2")
+
 ggplot(
 	data = safetyData::adam_adlbc, 
 	aes(x = PARAM, y = AVAL)
@@ -15,8 +18,12 @@ theme(
     axis.text = element_text(size = 12), 
     axis.title = element_text(size = 12)
 )
+############ End of Static Example #############
 
-#Shell for chart function
+
+
+###### Update the code below to deploy the static chart #######
+# Re-usable chart function
 labsBoxplot <- function(data,settings){
     ############ Add reusable chart code here! ################
 }
@@ -34,7 +41,6 @@ labBoxplotConfig<-list(
 charts<-list(prepareChart(labBoxplotConfig))
 safetyGraphicsApp(charts=charts, data=list(labs=safetyData::adam_adlbc))
 
-# Also confirm that the chart runs for: 
-
+# Also confirm that the chart runs for SDTM data: 
 safetyGraphicsApp(charts=charts, domainData=list(labs=safetyData::sdtm_lb))
 

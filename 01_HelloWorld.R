@@ -1,5 +1,4 @@
 # Installation
-install.packages("safetyGraphics")
 library("safetyGraphics")
 
 # Example 1.1 - Default App

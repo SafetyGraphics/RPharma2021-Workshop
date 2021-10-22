@@ -1,8 +1,4 @@
-# Examples from the safetyGraphics Cookbook Vignette
-# https://github.com/SafetyGraphics/safetyGraphics/wiki/Cookbook
-
 # Installation
-install.packages("safetyGraphics")
 library("safetyGraphics")
 library("tidyverse")
 

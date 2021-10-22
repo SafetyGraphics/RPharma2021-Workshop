@@ -1,9 +1,7 @@
-
-# Installation
+# Example 5.1 - Make a vital signs domain based on the existing labs domain ... with no charts?!
 library("safetyGraphics")
 library("tidyverse")
 
-# Example 5.1 - Make a vital signs domain based on the existing labs domain ... with no charts?!
 vitalsMeta <- safetyGraphics::meta %>%
 filter(domain == 'labs') %>% 
 mutate(domain='vitals')
@@ -62,7 +60,6 @@ safetyGraphicsApp(
 
 # Example 5.3 - Define an ECG data ... and adapt an existing chart for usage there.
 # See this PR for a full implementation of the ECG domain in safetyCharts - https://github.com/SafetyGraphics/safetyCharts/pull/90
-
 library(safetyGraphics)
 library(yaml)
 library(tidyverse)

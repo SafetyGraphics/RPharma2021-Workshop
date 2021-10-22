@@ -1,27 +1,22 @@
-# Examples from the safetyGraphics Cookbook Vignette
-# https://github.com/SafetyGraphics/safetyGraphics/wiki/Cookbook
-
-# Installation
-install.packages("safetyGraphics")
+# Example 4.1 - Drop unwanted Charts - In this example we only keep charts that *not* htmlwidgets
 library("safetyGraphics")
 library("tidyverse")
-
-# Example 4.1 - Drop unwanted Charts
-library(purrr)
 charts <- makeChartConfig() #gets charts from safetyCharts pacakge by default
 notWidgets <- charts %>% purrr::keep(~.x$type != "htmlwidget")
 safetyGraphicsApp(charts=notWidgets)
 
-
-# Example 4.2 - Edit metadata for an existing a chart
-library(purrr)
+# Example 4.2 - Edit metadata for an existing a chart 
+library("safetyGraphics")
+library("tidyverse")
 charts <- makeChartConfig() #gets charts from safetyCharts pacakge by default
 charts$aeTimelines$label <- "An AMAZING timeline"
 safetyGraphicsApp(charts=charts)
 
-# Try 04_Excercise1.R now!
+########## Try 04_Excercise1.R now! ################
 
 # Example 4.3 - Add a custom Hello World chart
+library("safetyGraphics")
+library("tidyverse")
 helloWorld <- function(data, settings){
     plot(-1:1, -1:1)
     text(runif(20, -1,1),runif(20, -1,1),"Hello World")
@@ -42,6 +37,8 @@ helloworld_chart<-list(
 safetyGraphicsApp(charts=list(helloworld_chart))
 
 # Example 4.4 - Simple custom Chart using data and settings
+library("safetyGraphics")
+library("tidyverse")
 ageDist <- function(data, settings){
   p<-ggplot(
     data = data, 
@@ -67,7 +64,8 @@ charts$ageDist<-ageDist_chart
 safetyGraphicsApp(charts=charts)
 
 # Example 4.5 - Custom static outlier explorer
-
+library("safetyGraphics")
+library("tidyverse")
 spaghettiPlot <- function( data, settings ){
 
     plot_aes<-aes(
@@ -76,14 +74,13 @@ spaghettiPlot <- function( data, settings ){
       group=as.name(settings$id_col)
     )
 
-    # Can also be done using standard evaluation
+    # NOTE: The aes() can also be defined using standard evaluation
     # plot_aes <- aes_(
     #    x=as.name(settings$studyday_col), 
     #    y=as.name(settings$value_col), 
     #    group=as.name(settings$id_col)
     # )
 
-    
     #create the plot
     p<-ggplot(data = data, plot_aes) +
         geom_path(alpha=0.15) + 
@@ -91,10 +88,12 @@ spaghettiPlot <- function( data, settings ){
             as.name(settings$measure_col),
             scales="free_y"
         )
+
     return(p)
 }
 
-spaghettiConfig <- read.yaml(text="env: safetyGraphics
+spaghettiConfig <- read.yaml(text=
+"env: safetyGraphics
 label: Spaghetti Plot
 name: spaghettiPlot
 type: plot
@@ -106,12 +105,13 @@ links:
   safetyCharts: https://github.com/SafetyGraphics/safetycharts
 ")
 
-charts <- makeChartConfig()
+charts <- makeChartConfig() 
 charts$spaghetti<-prepareChart(read_yaml(text=spaghettiConfig))
 safetyGraphicsApp(charts=charts)
 
-# Example 4.6 - Custom shiny module
-
+# Example 4.5 - Add a custom shiny module as a chart in the app. This example extends the static chart created in example 4.4. 
+library("safetyGraphics")
+library("tidyverse")
 safetyOutlierExplorer_ui <- function(id) {
     ns <- NS(id) 
     sidebar<-sidebarPanel(
@@ -135,7 +135,6 @@ safetyOutlierExplorer_ui <- function(id) {
 }
 
 safetyOutlierExplorer_server <- function(input, output, session, params) {
-
     ns <- session$ns
     # Populate control with measures and select all by default
     observe({
