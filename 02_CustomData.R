@@ -17,12 +17,10 @@ safetyGraphics::safetyGraphicsApp(domainData=justLabs)
 # Example 2.3 - Load SAS transport data 
 # Import data using standard R workflows and then initialize the app. Similar logic applies for `.sas7bdat` files (and any other extensions).
 library(haven)
-xptlabs <- haven::read_xpt('https://github.com/phuse-org/phuse-scripts/blob/master/data/adam/cdiscpilot01/adae.xpt?raw=true')
+xptLabs <- haven::read_xpt('https://github.com/phuse-org/phuse-scripts/blob/master/data/adam/cdiscpilot01/adlbc.xpt?raw=true')
 safetyGraphics::safetyGraphicsApp(domainData=list(labs=xptLabs))
 
-# Example 2.3 - Non-standard data
+# Example 2.4 - Non-standard data
 notAdAM <- list(labs=safetyData::adam_adlbc %>% rename(id = USUBJID))
 idMapping<- list(labs=list(id_col="id"))
 safetyGraphicsApp(domainData=notAdAM, mapping=idMapping)
-
-
