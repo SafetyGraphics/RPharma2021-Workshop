@@ -42,10 +42,10 @@ library("tidyverse")
 ageDist <- function(data, settings){
   p<-ggplot(
     data = data, 
-    aes_(x=as.name(settings$age_col))
+    aes(x=.data[[settings$age_col]])
   ) +
     geom_histogram() + 
-    facet_wrap(as.name(settings$sex_col))
+    facet_wrap(settings$sex_col)
   return(p)
 }
 
@@ -66,12 +66,13 @@ safetyGraphicsApp(charts=charts)
 # Example 4.5 - Custom static outlier explorer
 library("safetyGraphics")
 library("tidyverse")
+library("yaml")
 spaghettiPlot <- function( data, settings ){
 
     plot_aes<-aes(
       x=.data[[settings$studyday_col]],
-      x=.data[[settings$value_col]],
-      group=as.name(settings$id_col)
+      y=.data[[settings$value_col]],
+      group=.data[[settings$id_col]]
     )
 
     # NOTE: The aes() can also be defined using standard evaluation
@@ -83,16 +84,16 @@ spaghettiPlot <- function( data, settings ){
 
     #create the plot
     p<-ggplot(data = data, plot_aes) +
-        geom_path(alpha=0.15) + 
+        geom_line(alpha=0.15) + 
         facet_wrap(
-            as.name(settings$measure_col),
+            settings$measure_col,
             scales="free_y"
         )
 
     return(p)
 }
 
-spaghettiConfig <- read.yaml(text=
+spaghettiConfig <- read_yaml(text=
 "env: safetyGraphics
 label: Spaghetti Plot
 name: spaghettiPlot
@@ -106,7 +107,7 @@ links:
 ")
 
 charts <- makeChartConfig() 
-charts$spaghetti<-prepareChart(read_yaml(text=spaghettiConfig))
+charts$spaghetti<-prepareChart(spaghettiConfig)
 safetyGraphicsApp(charts=charts)
 
 # Example 4.6 - Add a custom shiny module as a chart in the app. This example extends the static chart created in example 4.4. 
