@@ -109,7 +109,7 @@ charts <- makeChartConfig()
 charts$spaghetti<-prepareChart(read_yaml(text=spaghettiConfig))
 safetyGraphicsApp(charts=charts)
 
-# Example 4.5 - Add a custom shiny module as a chart in the app. This example extends the static chart created in example 4.4. 
+# Example 4.6 - Add a custom shiny module as a chart in the app. This example extends the static chart created in example 4.4. 
 library("safetyGraphics")
 library("tidyverse")
 safetyOutlierExplorer_ui <- function(id) {

@@ -32,7 +32,9 @@ output:
 
 ## Setup
 
-We'll be using [RStudio Cloud]() for this workshop
+We'll be using [RStudio Cloud]() for this workshop. Click [this link]() to an RStudio Project that includes all examples, excercises and slides in your browser. 
+
+⚠️ Caution: Since we're using a cloud-based platform, we do not recommend using any propriatry data during the workshop. Sample data is provided for all examples. ⚠️
 
 ## Schedule 
 

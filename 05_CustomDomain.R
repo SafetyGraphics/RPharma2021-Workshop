@@ -89,3 +89,4 @@ safetyGraphicsApp(
     domainData=list(ecg=adeg), 
     charts=list(prepareChart(qtOutliers))
 )
+
