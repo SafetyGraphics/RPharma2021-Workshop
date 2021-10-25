@@ -5,9 +5,9 @@
 library("safetyGraphics")
 library("tidyverse")
 library("ggplot2")
-
+labs_sub <- unique(safetyData::adam_adlbc$PARAM)[1:5]
 ggplot(
-	data = safetyData::adam_adlbc, 
+	data = safetyData::adam_adlbc %>% filter(PARAM %in% labs_sub), 
 	aes(x = PARAM, y = AVAL)
 ) +
 geom_boxplot(fill ="blue") +
