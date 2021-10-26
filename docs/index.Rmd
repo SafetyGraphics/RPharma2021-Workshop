@@ -10,12 +10,18 @@ output:
 
 <div class="description-container">
   <div class="description-left">
-  Materials for the <a href="https://safetygraphics.github.io/">safetyGraphics</a> R Pharma 2021 Workshop
+  Materials for the <a href="https://safetygraphics.github.io/">safetyGraphics</a> R Pharma 2021 Workshop on 2021-10-29 from 9 AM - 12 noon ET.
   
-  The Interactive Safety Graphics (ISG) subteam of the ASA Biopharm-DIA Safety Working Group is an interdisciplinary effort that, amongst other things, seeks to provide a clinical safety workflow for monitoring during clinical development in an open source model.
+  The [Interactive Safety Graphics (ISG)](https://safetygraphics.github.io/) subteam of the ASA Biopharm-DIA Safety Working Group is an interdisciplinary effort that, amongst other things, seeks to provide a clinical safety workflow for monitoring during clinical development in an open source model.
   </div>
   <img class="description-right" src="safetyGraphicsHex.png" alt="safetyGraphics hex sticker"/>
 </div>
+
+## Setup
+
+We'll be using [RStudio Cloud](https://rstudio.cloud/) for this workshop. Click [this link](https://rstudio.cloud/spaces/179933/project/3011333) to an RStudio Project that includes all examples, exercises and slides in your browser. 
+
+⚠️ Caution: Since we're using a cloud-based platform, we do not recommend using any private data during the workshop. Sample data is provided for all examples. ⚠️
 
 ## Instructors
 
@@ -30,14 +36,7 @@ output:
 | [Jeremy Wildfire](https://www.linkedin.com/in/jeremy-wildfire/) | Gilead Sciences |
 
 
-## Setup
-
-We'll be using [RStudio Cloud]() for this workshop. Click [this link]() to an RStudio Project that includes all examples, excercises and slides in your browser. 
-
-⚠️ Caution: Since we're using a cloud-based platform, we do not recommend using any propriatry data during the workshop. Sample data is provided for all examples. ⚠️
-
 ## Schedule 
-
 
 | Time | Activity |
 | ---- | -------- |
@@ -51,13 +50,23 @@ We'll be using [RStudio Cloud]() for this workshop. Click [this link]() to an RS
 | 20 min | 🎀 Wrap Up | 
 
 
-
 ## Helpful Links
 
-[Last Year's Workshop]()
+- [Interactive Safety Graphics Working Group Home page](https://safetygraphics.github.io/)
+- [safetyGraphics Github Organization](https://github.com/SafetyGraphics/)
+
+*Presentations*
+
+- [Building Open Source Tools for Safety Monitoring: Advancing Research Through Community Collaboration](https://rinpharma.com/publication/rinpharma_105/) Presented by Becca Krouse at R/Pharma 2019 
+- [safetyGraphics v2.0 - Open Source Collaboration in Pharma using R and Shinyo](https://www.youtube.com/watch?v=2Ykw1jwSw5M) Presented by Jeremy Wildfire at R/Pharma 2020 
+
+*Papers*
+
+- [The Safety Explorer Suite: Interactive Safety Monitoring for Clinical Trials](https://journals.sagepub.com/doi/abs/10.1177/2168479018754846), Wildfire et al. 2018
+- [A New Paradigm for Safety Signal Detection and Evaluation Using Open-Source Software Created by an Interdisciplinary Working Group.](https://link.springer.com/content/pdf/10.1007/s43441-021-00319-3.pdf) Buchanan et al. 2021
+- [Data Monitoring committees for clinical trials evaluating treatments of COVID-19](https://www.contemporaryclinicaltrials.com/article/S1551-7144(20)30232-9/fulltext) Tobias Mütze and Tim Friede. 2020 
 
 
-[Slides]()
 
 <style>
   .description-container {
