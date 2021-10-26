@@ -1,7 +1,3 @@
-# Installation
-library("safetyGraphics")
-library("tidyverse")
-
 # Example 2.1 - SDTM Data
 sdtm <- list(
     dm=safetyData::sdtm_dm,
@@ -16,7 +12,6 @@ safetyGraphics::safetyGraphicsApp(domainData=justLabs)
 
 # Example 2.3 - Load SAS transport data 
 # Import data using standard R workflows and then initialize the app. Similar logic applies for `.sas7bdat` files (and any other extensions).
-library(haven)
 xptLabs <- haven::read_xpt('https://github.com/phuse-org/phuse-scripts/blob/master/data/adam/cdiscpilot01/adlbc.xpt?raw=true')
 safetyGraphics::safetyGraphicsApp(domainData=list(labs=xptLabs))
 

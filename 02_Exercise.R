@@ -1,10 +1,5 @@
 # Exercise 2 - Configure safetyGraphics for use with a non-standard labs dataset. 
 # Update the custom mapping based on the column names in the custom data set provided.
-
-library(safetyGraphics)
-library(tidyverse)
-library(yaml)
-
 customLabs <- read.csv("https://raw.githubusercontent.com/SafetyGraphics/SafetyGraphics.github.io/master/pilot/SampleData_PartialADaM.csv")
 
 customMapping<-list(

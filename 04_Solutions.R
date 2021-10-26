@@ -1,17 +1,21 @@
 # Exercise 4.1 Solution - Initialize the app with all custom/experimental charts from safetyCharts included. 
 # Hint: Check out the `order` value in `?makeChartConfig`
-library(safetyGraphics)
 allCharts<-makeChartConfig() %>% 
 purrr::map(function(chart){
     chart$order <- 1
     return(chart)
 })
+
+# Or use a for loop 
+# allCharts<-makeChartConfig()
+# for(chart in allCharts){
+#  chart$order <-1 
+# }
+
 safetyGraphicsApp(charts=allCharts)
 
 # Exercise 4.2 Solution - Convert the following static chart to run in the safetyGraphics app. Make sure that it works when custom data sets and mappings are provided.
 # Bonus - Normalize the data and plot the results using a standardized y-axis.
-library(safetyGraphics)
-library(tidyverse)
 labsBoxplot <- function(data,settings){
   p<-ggplot(
     data = data, 

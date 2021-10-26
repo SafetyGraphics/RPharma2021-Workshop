@@ -7,8 +7,6 @@
 # Additional customizastion for the bonus is done in the last line of the mapping_yaml definition on line 37 below. 
 
 ### Reproducible Code for Hepatic Safety Explorer (htmlwidget) ###
-library(yaml)
-library(safetyCharts)
 
 #Load Data
 #NOTE: Correct data names should be updated by user

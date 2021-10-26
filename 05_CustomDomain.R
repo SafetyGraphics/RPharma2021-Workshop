@@ -1,7 +1,4 @@
 # Example 5.1 - Make a vital signs domain based on the existing labs domain ... with no charts?!
-library("safetyGraphics")
-library("tidyverse")
-
 vitalsMeta <- safetyGraphics::meta %>%
 filter(domain == 'labs') %>% 
 mutate(domain='vitals')
@@ -18,9 +15,6 @@ sdtm <- list(
 safetyGraphics::safetyGraphicsApp(domainData=sdtm, meta=newMeta)
 
 # Example 5.2 - Add brand new Hello World data domain ... with an awesome custom chart!!
-library(safetyGraphics)
-library(tidyverse)
-
 helloMeta <- tribble(
   ~text_key, ~domain, ~label,       ~standard_hello, ~description,
   "x_col",   "hello", "x position", "x",             "x position for points in hello world chart",   
@@ -60,9 +54,6 @@ safetyGraphicsApp(
 
 # Example 5.3 - Define an ECG data ... and adapt an existing chart for usage there.
 # See this PR for a full implementation of the ECG domain in safetyCharts - https://github.com/SafetyGraphics/safetyCharts/pull/90
-library(safetyGraphics)
-library(yaml)
-library(tidyverse)
 adeg <- readr::read_csv("https://physionet.org/files/ecgcipa/1.0.0/adeg.csv?download")
 
 ecg_meta <-tibble::tribble(

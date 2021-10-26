@@ -1,6 +1,3 @@
-# Installation
-library("safetyGraphics")
-
 # Example 1.1 - Default App
 safetyGraphics::safetyGraphicsApp()
 

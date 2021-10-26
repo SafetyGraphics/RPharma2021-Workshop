@@ -2,9 +2,6 @@
 # Bonus - Normalize the data and plot the results using a standardized y-axis! 
 
 ############ Static Example #################
-library("safetyGraphics")
-library("tidyverse")
-library("ggplot2")
 labs_sub <- unique(safetyData::adam_adlbc$PARAM)[1:5]
 ggplot(
 	data = safetyData::adam_adlbc %>% filter(PARAM %in% labs_sub), 
