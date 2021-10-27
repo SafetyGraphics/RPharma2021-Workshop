@@ -36,7 +36,7 @@ labBoxplotConfig<-list(
     )
 )
 charts<-list(prepareChart(labBoxplotConfig))
-safetyGraphicsApp(charts=charts, data=list(labs=safetyData::adam_adlbc))
+safetyGraphicsApp(charts=charts, domainData=list(labs=safetyData::adam_adlbc))
 
 # Also confirm that the chart runs for SDTM data: 
 safetyGraphicsApp(charts=charts, domainData=list(labs=safetyData::sdtm_lb))
