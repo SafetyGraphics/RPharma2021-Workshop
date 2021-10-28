@@ -15,6 +15,8 @@ purrr::map(function(chart){
 safetyGraphicsApp(charts=allCharts)
 
 # Exercise 4.2 Solution - Convert the following static chart to run in the safetyGraphics app. Make sure that it works when custom data sets and mappings are provided.
+# For details about the settings for the labs domain see: View(safetyGraphics::meta %>% filter(domain=="labs")) 
+# To access the current value for a setting use the `text_key`. for example, settings$id_col would give the current value for the ID column.
 # Bonus - Normalize the data and plot the results using a standardized y-axis.
 labsBoxplot <- function(data,settings){
   p<-ggplot(
