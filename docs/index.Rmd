@@ -22,7 +22,7 @@ Sign up [here](https://docs.google.com/forms/d/e/1FAIpQLSd4wkSfaajuj3iaVHirqj8L0
 
 ## Workshop
 
-We'll be using [RStudio Cloud](https://rstudio.cloud/) for this workshop. Click [this link](https://rstudio.cloud/spaces/179933/project/3011333) to an RStudio Project that includes all examples, exercises and a copy of the Slides [(download pptx)](https://github.com/SafetyGraphics/RPharma2021-Workshop/blob/main/slides/SafetyGraphicsWorkshop.pptx?raw=true). We'll also do a quick 3-question survey at this [here](https://app.sli.do/event/u5vl25mw).
+We'll be using [RStudio Cloud](https://rstudio.cloud/) for this workshop. Click [this link](https://rstudio.cloud/spaces/179933/project/3011333) to open an RStudio Project that includes all examples, exercises and a copy of the Slides [(download pptx)](https://github.com/SafetyGraphics/RPharma2021-Workshop/blob/main/slides/SafetyGraphicsWorkshop.pptx?raw=true). We'll also do a quick 3-question survey at this [link](https://app.sli.do/event/u5vl25mw).
 
 ⚠️ Caution: Since we're using a cloud-based platform, we do not recommend using any private data during the workshop. Sample data is provided for all examples. ⚠️
 
